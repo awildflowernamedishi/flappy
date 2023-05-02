@@ -187,7 +187,7 @@ if __name__ == "__main__":
     # This will be the main point from where our game will start
     pygame.init() # Initialize all pygame's modules
     FPSCLOCK = pygame.time.Clock()
-    pygame.display.set_caption('Flappy Bird User')
+    pygame.display.set_caption('Flappy Bird Game')
     GAME_SPRITES['numbers'] = ( 
         pygame.image.load('gallery/sprites/0.png').convert_alpha(),
         pygame.image.load('gallery/sprites/1.png').convert_alpha(),
@@ -218,5 +218,5 @@ if __name__ == "__main__":
     GAME_SPRITES['player'] = pygame.image.load(PLAYER).convert_alpha()
 
     while True:
-        welcomeScreen() # Shows welcome screen to the user until he presses a button
-        mainGame() # This is the main game function 
+        welcomeScreen() 
+        mainGame()
